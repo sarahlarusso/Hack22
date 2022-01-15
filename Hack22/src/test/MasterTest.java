@@ -1,11 +1,13 @@
 package test;
 
+import general.HashList;
 import org.junit.*;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -44,5 +46,28 @@ public class MasterTest {
         //The first value is the correct value, and the second is the value the program outputs.
         assertEquals(3, 3);
         assertEquals(5, 1 + 4);
+    }
+
+    /**
+     * Tests HashList methods
+     */
+    @Test
+    public void testHashList() {
+        HashList<Integer> list = new HashList<>(List.of(0, 1, 2, 3, 4, 5));
+        assertEquals(6, list.size());
+        assertEquals(5, (int) list.get(5));
+        try {
+            list.get(6);
+            fail();
+        } catch (IndexOutOfBoundsException npe) {
+            //Test passed
+        }
+        list.add(6);
+        assertEquals(7, list.size());
+        assertEquals(6, (int) list.get(6));
+        list.remove(2);
+        assertEquals(6, list.size());
+        assertEquals(5, (int) list.get((Integer) 5));
+        assertEquals(5, (int) list.get(4));
     }
 }
