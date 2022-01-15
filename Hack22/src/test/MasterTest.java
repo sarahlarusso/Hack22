@@ -77,11 +77,12 @@ public class MasterTest {
      * Test the Methods in Student Class
      */
     @Test
-    public void testStudents(){
+    public void testUsers(){
         School school1 = new School("WorcesterShire Polytechnic Institute");
         Student stud1 = new Student("Joe Cool", "joeissocool",school1);
         assertEquals("Joe Cool", stud1.getName());
         assertEquals(stud1, school1.getStudents().get(0));
+
 
     }
 
