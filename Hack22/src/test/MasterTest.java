@@ -1,15 +1,12 @@
 package test;
 
-import general.HashList;
-import general.School;
-import general.Student;
+import general.*;
 import org.junit.*;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -74,17 +71,26 @@ public class MasterTest {
     }
 
     /**
-     * Test the Methods in Student Class
+     * Tests the methods in Student.java
      */
     @Test
-    public void testStudents(){
-        School school1 = new School("WorcesterShire Polytechnic Institute");
-        Student stud1 = new Student("Joe Cool", "joeissocool",school1);
-        assertEquals("Joe Cool", stud1.getName());
-        assertEquals(stud1, school1.getStudents().get(0));
-
+    public void testStudents() {
+        School school = new School("WorcesterShire Polytechnic Institute", new HashList<>());
+        Student student = new Student("Joe Cool", "joeissocool", school, 15);
+        assertEquals("Joe Cool", student.getName());
+        assertEquals(student, school.getStudents().get(0));
+        assertTrue(school.contains(student));
     }
 
-
-
+    /**
+     * Tests the methods in Category.java
+     */
+    @Test
+    public void testCategory() {
+        Category[] categories = {Category.COOKING, Category.ART, Category.INDOORS, Category.SCIENCE};
+        String[] names = {"Cooking", "Art", "Indoors", "Science"};
+        for(int i = 0; i < categories.length; i++) {
+            assertEquals(names[i], categories[i].getName());
+        }
+    }
 }
