@@ -80,6 +80,10 @@ public class MasterTest {
         assertEquals("Joe Cool", student.getName());
         assertEquals(student, school.getStudents().get(0));
         assertTrue(school.contains(student));
+
+        student.addPreference(Category.AFTER_SCHOOL);
+        assertEquals(1, student.getPreferences().size());
+        assertEquals(Category.AFTER_SCHOOL, student.getPreferences().get(0));
     }
 
     /**
