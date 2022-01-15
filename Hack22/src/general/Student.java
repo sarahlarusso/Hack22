@@ -82,4 +82,12 @@ public class Student extends User{
     public boolean removePreference(Category preference) {
         return this.preferences.remove(preference);
     }
+
+    /**
+     * Gets all Category preferences for this Student
+     * @return this.preferences
+     */
+    public HashList<Category> getPreferences() {
+        return this.preferences;
+    }
 }
