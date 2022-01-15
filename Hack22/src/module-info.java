@@ -1,2 +1,3 @@
 module general {
+	exports general;
 }
