@@ -97,4 +97,12 @@ public class MasterTest {
             assertEquals(names[i], categories[i].getName());
         }
     }
+
+    /**
+     * Tests the Organization search method in Student
+      */
+    @Test
+    public void testStudentOrganizationSearch() {
+        //fill in methods
+    }
 }

@@ -1,5 +1,7 @@
 package general;
 
+import java.util.Iterator;
+
 public class Student extends User{
 
     //The School for this Student
@@ -89,5 +91,28 @@ public class Student extends User{
      */
     public HashList<Category> getPreferences() {
         return this.preferences;
+    }
+
+    /**
+     * Searches for Organizations that fit the preferences of this Student
+     * @param name a substring the name of a filtered Organization must contain
+     * @param organizations the starter list of Organizations
+     * @return the list of all Organizations that fit the preferences and name filter of the Student
+     */
+    public HashList<Organization> getPreferredOrganizations(String name, HashList<Organization> organizations) {
+        HashList<Organization> preferredOrganizations = new HashList<>();
+        for(Organization o : organizations) {
+            boolean orgIsValidPreference = o.getName().contains(name);
+            Iterator<Category> categoryIterator = this.preferences.iterator();
+            while(orgIsValidPreference && categoryIterator.hasNext()) {
+                if(! o.contains(categoryIterator.next())) {
+                    orgIsValidPreference = false;
+                }
+            }
+            if(orgIsValidPreference) {
+                preferredOrganizations.add(o);
+            }
+        }
+        return preferredOrganizations;
     }
 }
