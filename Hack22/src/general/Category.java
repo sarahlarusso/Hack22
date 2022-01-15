@@ -1,9 +1,9 @@
 package general;
 
 /**
- * Stores different categories of
+ * Stores different Categories (filters) for Organizations
  */
-public enum OrganizationCategory {
+public enum Category {
     COOKING("Cooking"),
     KIDS("Kids"),
     ANIMALS("Animals"),
@@ -18,19 +18,19 @@ public enum OrganizationCategory {
     SUMMER("Summer"),
     WINTER_BREAK("Winter Break");
 
-    // Stores the name of this OrganizationCategory
+    // Stores the name of this Category
     private final String name;
 
     /**
-     * Creates a new OrganizationCategory
-     * @param name the name of this OrganizationCategory
+     * Creates a new Category
+     * @param name the name of this Category
      */
-    OrganizationCategory(String name) {
+    Category(String name) {
         this.name = name;
     }
 
     /**
-     * Finds the name of this OrganizationCategory
+     * Finds the name of this Category
      * @return this.name
      */
     public String getName() {
