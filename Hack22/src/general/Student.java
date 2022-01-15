@@ -6,6 +6,8 @@ public class Student extends User{
     private School school;
     //The age of this Student
     private int age;
+    //The list of Category preferences for this Student
+    private final HashList<Category> preferences;
 
     /**
      * Creates a new Student
@@ -19,6 +21,7 @@ public class Student extends User{
         school.addStudent(this);
         this.school = school;
         this.age = age;
+        this.preferences = new HashList<>();
     }
 
     /**
@@ -51,5 +54,40 @@ public class Student extends User{
      */
     public School getSchool() {
         return this.school;
+    }
+
+    /**
+     * Adds a Category to this Student's preferences
+     * @param preference the specified Category preference
+     * @return false if the Category already existed in this Student's preferences, else true
+     */
+    public boolean addPreference(Category preference) {
+        return this.preferences.add(preference);
+    }
+
+    /**
+     * Determines whether a specified Category is included in this Student's preferences
+     * @param preference the target Category preference
+     * @return true if the preference is contained in the list, else false
+     */
+    public boolean preferencesContain(Category preference) {
+        return this.preferences.contains(preference);
+    }
+
+    /**
+     * Removes a Category from this Student's preferences
+     * @param preference the target Category preference
+     * @return true if this Category previously existed in this Student's preferences, else false
+     */
+    public boolean removePreference(Category preference) {
+        return this.preferences.remove(preference);
+    }
+
+    /**
+     * Gets all Category preferences for this Student
+     * @return this.preferences
+     */
+    public HashList<Category> getPreferences() {
+        return this.preferences;
     }
 }

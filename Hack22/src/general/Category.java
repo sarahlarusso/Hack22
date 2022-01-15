@@ -16,7 +16,8 @@ public enum Category {
     ENGINEERING("Engineering"),
     AFTER_SCHOOL("After School"),
     SUMMER("Summer"),
-    WINTER_BREAK("Winter Break");
+    WINTER_BREAK("Winter Break"),
+    WEEKEND("Weekend");
 
     // Stores the name of this Category
     private final String name;
