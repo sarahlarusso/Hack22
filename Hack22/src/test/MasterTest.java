@@ -75,11 +75,11 @@ public class MasterTest {
      */
     @Test
     public void testStudents() {
-        School school1 = new School("WorcesterShire Polytechnic Institute", new HashList<>());
-        Student stud1 = new Student("Joe Cool", "joeissocool", school1, 15);
-        assertEquals("Joe Cool", stud1.getName());
-        assertEquals(stud1, school1.getStudents().get(0));
-
+        School school = new School("WorcesterShire Polytechnic Institute", new HashList<>());
+        Student student = new Student("Joe Cool", "joeissocool", school, 15);
+        assertEquals("Joe Cool", student.getName());
+        assertEquals(student, school.getStudents().get(0));
+        assertTrue(school.contains(student));
     }
 
     /**
