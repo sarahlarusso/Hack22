@@ -1,0 +1,12 @@
+Lincoln-Sudbury Regional High School,Sudbury,MA
+Shrewsbury High School,Shrewsbury,MA
+Massachusetts Academy of Math and Science at WPI,Worcester,MA
+Roxbury Latin School,Roxbury,MA
+Concord Academy,Concord,MA
+Tahanto Regional High School,Boylston,MA
+Tantasqua Regional High School,Sturbridge,MA
+Middlesex School,Concord,MA
+Darien High School,Darien,CT
+Marine Science Magnet High School of Southeastern,Groton,CT
+Weston High School,Weston,CT
+Acton-Boxborough Regional High School,Acton,MA

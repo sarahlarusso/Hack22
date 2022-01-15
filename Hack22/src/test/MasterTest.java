@@ -81,6 +81,7 @@ public class MasterTest {
         assertEquals(student, school.getStudents().get(0));
         assertTrue(school.contains(student));
 
+
         student.addPreference(Category.AFTER_SCHOOL);
         assertEquals(1, student.getPreferences().size());
         assertEquals(Category.AFTER_SCHOOL, student.getPreferences().get(0));
@@ -96,5 +97,13 @@ public class MasterTest {
         for(int i = 0; i < categories.length; i++) {
             assertEquals(names[i], categories[i].getName());
         }
+    }
+
+    /**
+     * Tests the Organization search method in Student
+      */
+    @Test
+    public void testStudentOrganizationSearch() {
+        //fill in methods
     }
 }
