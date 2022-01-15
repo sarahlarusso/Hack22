@@ -6,7 +6,5 @@ public class Main {
 }
 // Tony Vuolo
 //Deepti Gosukonda
-// Sarah :)
-//Phillip Brush
-//Phillip Brush
+//Sarah LaRusso
 //Phillip Brush
