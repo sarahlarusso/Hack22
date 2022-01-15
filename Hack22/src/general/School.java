@@ -44,6 +44,15 @@ public class School {
     }
 
     /**
+     * Determines whether this School contains a specific Student
+     * @param student the specified Student
+     * @return true if this School contains the Student, else false
+     */
+    public boolean contains(Student student) {
+        return this.students.contains(student);
+    }
+
+    /**
      * Gets the List of Students at this School
      * @return this.students
      */
