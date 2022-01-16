@@ -9,6 +9,22 @@ body {
   font-family: 'Poppins';
 }
 
+#Org1 {
+  background-color: #8FB7EF;
+  margin-bottom: 0.5em;
+}
+
+#Org2 {
+  background-color: #C3D6F1;
+  margin-bottom: 0.5em;
+}
+
+#Org3 {
+  background-color: #8FB7EF;
+  margin-bottom: 0.5em;
+  padding-top: .5em;;
+}
+
 .navbar {
   background: white;
   padding: 1em;
@@ -54,13 +70,21 @@ section {
   padding: 5em 2em;
 }
 
-.headerOrg{
+.headerOrg h1{
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0;
-    font-size:20px;
+    padding: 0em;
+    font-size:30px;
 
+}
+
+.headerOrg p{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size:15px;
 }
 
 .Org1 {
