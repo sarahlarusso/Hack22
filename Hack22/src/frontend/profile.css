@@ -72,12 +72,13 @@ section {
   text-align: center;
 }
 
-.left-col .subhead {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: gray;
-  letter-spacing: .3em;
-}
+.left-col p{
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  color: var(--primary-color);
+                  letter-spacing: .3em;
+                  font-size: 1.3em;
+              }
 
 .left-col h1 {
   font-size: 2.5em;
