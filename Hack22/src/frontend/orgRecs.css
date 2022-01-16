@@ -54,8 +54,25 @@ section {
   padding: 5em 2em;
 }
 
-.hero {
+.headerOrg {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.Org1 {
+  text-align: left;
+  padding-top: 1em;
+}
+
+.Org2 {
+  text-align: left;
+}
+
+.Org3 {
+  text-align: left;
 }
 
 .left-col .subhead {
@@ -66,9 +83,48 @@ section {
 }
 
 .left-col h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.3em;
-  margin-top: .2em;
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-family: Oswald;
+  color: black;
+}
+
+.MustardSeed {
+  font-size: 10px;
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-family: Oswald;
+  color: black;
+}
+
+.FriendlyHouse {
+  font-size: 10px;
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-family: Oswald;
+  color: black;
+}
+
+.JohnBapChurch {
+  font-size: 10px;
+  width: 20%;
+  margin-top: 0;
+  margin-bottom: .25em;
+  font-family: Oswald;
+  color: black;
+}
+
+.right-col p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0;
+  font-family: Merriweather;
+  color: black;
 }
 
 .left-col .primary-cta {
@@ -76,6 +132,7 @@ section {
   color: white;
   text-decoration: none;
   padding: .6em 1.3em;
+  margin-top: 9.5em;
   font-size: 1.4em;
   border-radius: 5em;
   font-weight: bold;
@@ -87,6 +144,7 @@ section {
   color: white;
   text-decoration: none;
   padding: .6em 1.3em;
+  margin-top: 9.5em;
   font-size: 1.4em;
   border-radius: 5em;
   font-weight: bold;
@@ -145,4 +203,4 @@ nav li a:hover {
   margin: .5em;
   cursor: pointer;
 }
-/*# sourceMappingURL=aboutUs.css.map */
+/*# sourceMappingURL=orgRecs.css.map */

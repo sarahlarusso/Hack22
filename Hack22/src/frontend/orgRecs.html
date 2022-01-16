@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - LindaHand</title>
-  <link rel="stylesheet" href="logIn.css">
+  <title>LindaHand</title>
+  <link rel="stylesheet" href="orgRecs.css">
+  <!-- href is hypertext reference which in this case creates a link to css code -->
 </head>
 
 <body>
@@ -29,26 +30,33 @@
     </div>
   </div>
 
-  <section class="hero">
-    <div class="container">
-      <div class="left-col">
+<section class="headerOrg">
+  <h1>Recommended Organizations</h1>
+</section>
 
-        <h1>Existing User</h1>
-
-        <form action="profile.html">
-          <label for="uname">Username:</label>
-          <input type="text" id="uname" name="uname" required><br><br>
-          <label for="pword">Password:</label>
-          <input type="password" id="pword" name="pword" required><br><br>
-          <input type="submit" value="Log In">
-        </form>
-
-        <p>New User?</p> <a class="logo" href="newUser.html">Register Account</a>
-      </div>
+<section class="Org1">
+  <div class="container">
+      <h1>Mustard Seed</h1>
+      <img id="Org1" class="MustardSeed" src="images/MustardSeed.jpg" alt="" style="float: left; margin-right: 15px;">
+      <p>Something about mustard</p>
     </div>
-  </section>
+</section>
 
+<section class="Org2">
+  <div class="container">
+      <h1>John Baptist Church</h1>
+      <img id="Org2" class="FriendlyHouse" src="images/Friendly.JPG" alt="" style="float: left; margin-right: 15px;">
+      <p>Something about Friendly</p>
+    </div>
+</section>
 
+<section class="Org3">
+  <div class="container">
+      <h1>FriendlyHouse, Inc</h1>
+      <img id="Org3" class="JohnBapChurch" src="images/JSBC.jpg" alt="" style="float: left; margin-right: 15px;">
+      <p>Something about JSBC</p>
+    </div>
+</section>
 
   <script>
     const mobileBtn = document.getElementById('mobile-cta')

@@ -81,17 +81,7 @@ section{
         background: var(--primary-color);
         color: white;
         text-decoration: none;
-        padding: .6em 1.3em;
-        font-size: 1.4em;
-        border-radius: 5em;
-        font-weight: bold;
-        display: inline-block;
-    }
-
-    .secondary-cta{
-        background: var(--primary-color);
-        color: white;
-        text-decoration: none;
+        margin-top: 2em;
         padding: .6em 1.3em;
         font-size: 1.4em;
         border-radius: 5em;
@@ -105,6 +95,8 @@ section{
     width: 40%;
     margin-top: 5em; 
 }
+
+
 
 h2 {
     font-size: 2em;

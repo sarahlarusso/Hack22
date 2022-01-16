@@ -9,6 +9,40 @@ body {
   font-family: 'Poppins';
 }
 
+input[type="text"] {
+  width: 40%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="password"] {
+  width: 40%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.H1toH5 input {
+  display: none;
+}
+
+.H1toH5 .seatButton {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.H1toH5 input:checked + .seatButton {
+  background: #d3e2fa;
+}
+
 .navbar {
   background: white;
   padding: 1em;
@@ -51,40 +85,41 @@ ul {
 }
 
 section {
-  padding: .5em 2em;
+  padding: 5em 2em;
 }
 
 .hero {
   text-align: center;
 }
 
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: .3em;
+}
+
 .left-col h1 {
   font-size: 2.5em;
   line-height: 1.3em;
+  margin-top: .2em;
 }
 
-label {
-  display: block;
-  font-size: 1.2em;
-  margin-top: 1.5em;
+.left-col .primary-cta {
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  margin-top: 2em;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
 }
 
-input, textarea {
-  width: 30%;
-  padding: .8em;
-  margin-bottom: 1em;
-  border-radius: .3em;
-  border: 1px solid gray;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-input[id="uname"] {
-  margin-bottom: 0;
-}
-
-input[id="email"] {
-  margin-bottom: 0;
+.hero-img {
+  width: 40%;
+  margin-top: 5em;
 }
 
 input[type="submit"] {
@@ -102,7 +137,13 @@ input[type="submit"] {
 }
 
 h2 {
-  margin-bottom: .00001em;
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
 }
 
 nav.menu-btn {
@@ -142,4 +183,4 @@ nav li a:hover {
   margin: .5em;
   cursor: pointer;
 }
-/*# sourceMappingURL=newUser.css.map */
+/*# sourceMappingURL=newOrg.css.map */
