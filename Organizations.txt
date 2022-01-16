@@ -1,4 +1,4 @@
-John Street Baptist Church"This is a local soup kitchen, which serves meals on Saturdays from 11:00 am – 1:00 pm."Worcester;Coooking,Indoors,Weekend,Winter Break,Summer
+John Street Baptist Church"This is a local soup kitchen, which serves meals on Saturdays from 11:00 am – 1:00 pm."Worcester;Cooking,Indoors,Weekend,Winter Break,Summer
 The Mustard Seed"Come join us and help out at this food pantry. Meals served daily."Worcester;Cooking,Indoors,Weekend,After School,Winter Break,Summer
 Friendly House Pantry"Food pantry that distributes food on weekdays."Worcester;Cooking,Indoors,After School,Summer
 Horizons For Homeless Children"We are a non-profit dedicated to improving the lives of young homeless children and helping their families."Worcester;Kids,Indoors,Art,Summer,Winter Break
@@ -10,5 +10,3 @@ Ecotarium"Looking for volunteers to maintain gardens and interact with kids."Wor
 Garden Volunteer"Looking for volunteers to assist us ensuring the beds are properly watered and maintained in our off hours."Shrewsbury;Outdoors,After School,Weekend
 Robotics Team Mentor"Tahanto Regional is looking for high school students with robotics experience to run workshops for the middle school robotics team."Boylston;Indoors,Engineering,After School,Tutoring
 Litter Clean-up"Every Saturday from 9 to noon, we pick a location and clean up litter off of main roads."Holden;Outdoors,Weekend
-
-

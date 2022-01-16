@@ -1,22 +1,19 @@
 package general;
 
 import java.util.AbstractMap;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Stores different Categories (filters) for Organizations
  */
 public enum Category {
     COOKING("Cooking"), KIDS("Kids"), ANIMALS("Animals"), OUTDOORS("Outdoors"),
-    INDOORS("Indoors"), SENIOR_CITIZENS("Senior Citizens"), TUTORING("Tutoring"), ART("Art"),
-    SCIENCE("Science"), ENGINEERING("Engineering"), AFTER_SCHOOL("After School"),
+    INDOORS("Indoors"), SENIOR_CITIZENS("Senior Citizens"), TUTORING("Tutoring"),
+    ART("Art"), SCIENCE("Science"), ENGINEERING("Engineering"),
+    AFTER_SCHOOL("After School"),
     SUMMER("Summer"), WINTER_BREAK("Winter Break"), WEEKEND("Weekend");
 
-    public static HashMap<String, Category> nameMap = (HashMap<String, Category>)
-        Map.ofEntries(
+    public static final Map<String, Category> nameMap = Map.ofEntries(
                 new AbstractMap.SimpleEntry<>("Cooking",COOKING),
                 new AbstractMap.SimpleEntry<>("Kids", KIDS),
                 new AbstractMap.SimpleEntry<>("Animals", ANIMALS),

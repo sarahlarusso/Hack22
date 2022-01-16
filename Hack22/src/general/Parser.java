@@ -1,13 +1,12 @@
 package general;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.*;
 
 public class Parser {
 
-    public static HashList<Organization> parseFile(String fileName) throws FileNotFoundException {
-        HashList<Organization> orgs = new HashList<Organization>();
+    public static HashList<Organization> parseFile(String fileName) throws IOException {
+        HashList<Organization> orgs = new HashList<>();
         Scanner scanley = new Scanner(new File(fileName));
             while(scanley.hasNextLine()){
                 String line = scanley.nextLine();
@@ -25,8 +24,10 @@ public class Parser {
                 for(String tag : tags){
                     org.add(Category.getCategory(tag));
                 }
+
                 orgs.add(org);
             }
+            scanley.close();
             return orgs;
     }
 
