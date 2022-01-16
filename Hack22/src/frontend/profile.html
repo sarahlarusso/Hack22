@@ -117,7 +117,7 @@
     })
 
     window.onload = () => {
-        fetch('/newUser').then(res => {
+        fetch('/username.txt').then(res => {
             return res.text();
         }).then(user => {
             let userDiv = document.getElementById('uname');

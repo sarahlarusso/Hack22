@@ -101,7 +101,12 @@ public class Main {
 		InputStream inputStream = httpExchange.getRequestBody();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		String line = reader.lines().collect(Collectors.joining("\n"));
-		System.out.println(line);
+		String[] ar = line.split("&");
+
+		File file = new File(pathToRoot + "username.txt");
+		FileWriter fileWriter = new FileWriter(file);
+		fileWriter.write(ar[0].substring(6));
+		fileWriter.close();
 
 		final String response = "<meta http-equiv=\"Refresh\" content=\"0; url='/profile.html'\" />\n";
 		httpExchange.getResponseHeaders().set("Content-Type", "text/html");
