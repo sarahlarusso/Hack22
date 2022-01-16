@@ -41,6 +41,7 @@ public class Main {
 		}
 		httpServer.createContext("/", ex -> handle(pathToRoot, ex));
 		httpServer.createContext("/profile/", ex -> handleProfile(pathToRoot, ex));
+		httpServer.createContext("/user_preferences/", ex -> handleCategories(pathToRoot, ex));
 		//int port = Integer.parseInt(args[1]);
 
 		httpServer.setExecutor(null); // creates a default executor
@@ -116,6 +117,10 @@ public class Main {
 		writer.write(response);
 		writer.flush();
 		writer.close();
+	}
+
+	public static void handleCategories(String pathToRoot, HttpExchange httpExchange) throws IOException {
+		System.out.println("guakamole");
 	}
 }
 
