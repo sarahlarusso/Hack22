@@ -3,7 +3,7 @@ package general;
 import java.io.*;
 import java.util.*;
 
-public class Parser {
+public class OrgParser {
 
     public static HashList<Organization> parseFile(String fileName) throws IOException {
         HashList<Organization> orgs = new HashList<>();

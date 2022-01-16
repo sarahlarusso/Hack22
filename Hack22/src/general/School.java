@@ -8,6 +8,10 @@ public class School {
     String name;
     //The List of Students at this School
     HashList<Student> students;
+    //Town
+    String town;
+    //State
+    String state;
 
     /**
      * Creates a new School
@@ -58,5 +62,37 @@ public class School {
      */
     public HashList<Student> getStudents() {
         return this.students;
+    }
+
+    /**
+     *
+     * @return string of the town's name
+     */
+    public String getTown(){
+        return town;
+    }
+
+    /**
+     *
+     * @param town the name of the town the school is in
+     */
+    public void setTown(String town){
+        this.town = town;
+    }
+
+    /**
+     *
+     * @return the name of the state as a string
+     */
+    public String getState(){
+        return state;
+    }
+
+    /**
+     *
+     * @param state as a string from where the school is in
+     */
+    public void setState(String state){
+        this.state = state;
     }
 }

@@ -103,8 +103,11 @@ public class MasterTest {
      * Tests the Organization search method in Student
       */
     @Test
-    public void testStudentOrganizationSearch() throws IOException{
-        HashList<Organization> orgs = Parser.parseFile("Organizations.txt");
+    public void testParser() throws IOException {
+        HashList<Organization> orgs = OrgParser.parseFile("Organizations.txt");
         assertEquals(12, orgs.size());
+        HashList<School> schools = SchoolParser.parseFile("Schools.txt");
+        assertEquals(12, schools.size());
+        assertEquals("Roxbury", schools.get(3).getTown());
     }
 }
