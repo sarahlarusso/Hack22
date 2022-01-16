@@ -6,9 +6,11 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.Assert.*;
+
 
 public class MasterTest {
     /*
@@ -27,7 +29,6 @@ public class MasterTest {
         }
         final int RUN_COUNT = result.getRunCount();
         System.out.println((RUN_COUNT - failures.size()) + "/" + RUN_COUNT + " tests passed");
-        System.out.println(result.wasSuccessful());
     }
 
     /**
@@ -96,5 +97,14 @@ public class MasterTest {
         for(int i = 0; i < categories.length; i++) {
             assertEquals(names[i], categories[i].getName());
         }
+    }
+
+    /**
+     * Tests the Organization search method in Student
+      */
+    @Test
+    public void testStudentOrganizationSearch() throws IOException{
+        HashList<Organization> orgs = Parser.parseFile("Organizations.txt");
+        assertEquals(12, orgs.size());
     }
 }

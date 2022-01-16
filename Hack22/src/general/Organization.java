@@ -8,6 +8,10 @@ public class Organization {
     private String name;
     //Stores all Categories
     private final HashList<Category> organizationCategories;
+    // Description
+    private String description;
+    // town
+    private String town;
 
     /**
      * Creates a new Organization with no Categories
@@ -68,4 +72,41 @@ public class Organization {
     public boolean contains(Category category) {
         return this.organizationCategories.contains(category);
     }
+
+    /**
+     * Gets the name of the town the Org is located in
+     * @return the name of the tow the org is in
+     */
+    public String getTown(){
+        return town;
+    }
+
+    /**
+     * Sets the Town name for the Town the Org is located in
+     * @param town input town name where the org is located
+     */
+    public void setTown(String town){
+        this.town = town;
+    }
+
+    /**
+     * Gets the description of an Org
+     * @return description of the Org
+     */
+    public String getDescription(){
+        return description;
+    }
+
+    /**
+     * Sets the description of this Org
+     * @param desc input description of the Org
+     */
+    public void setDescripton(String desc){
+        description = desc;
+    }
+
+
+
+
+
 }

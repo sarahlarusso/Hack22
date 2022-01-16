@@ -1,0 +1,12 @@
+John Street Baptist Church"This is a local soup kitchen, which serves meals on Saturdays from 11:00 am – 1:00 pm."Worcester;Cooking,Indoors,Weekend,Winter Break,Summer
+The Mustard Seed"Come join us and help out at this food pantry. Meals served daily."Worcester;Cooking,Indoors,Weekend,After School,Winter Break,Summer
+Friendly House Pantry"Food pantry that distributes food on weekdays."Worcester;Cooking,Indoors,After School,Summer
+Horizons For Homeless Children"We are a non-profit dedicated to improving the lives of young homeless children and helping their families."Worcester;Kids,Indoors,Art,Summer,Winter Break
+Worcester Animal Rescue League"We are a non-profit animal shelter looking for volunteers to care for animal and do general office work."Worcester;Animals,Indoors,Weekend,Summer
+Worcester County Humane Society"Looking for volunteers for cage/kennel cleaning, feeding, medicating, and grooming the animals."Worcester;Indoors,Animals,Weekend,Summer
+Literacy Volunteers of Greater Worcester"Help volunteer as a literary tutor for our students, primarily adult immigrants and refugees, who wish to improve their English."Worcester;Indoors,Tutoring,After School,Winter Break
+Children Rising"You can help an enthusiastic student who is struggling with reading, math, or career opportunities."Holden;Indoors,Tutoring,Kids,Science,After School
+Ecotarium"Looking for volunteers to maintain gardens and interact with kids."Worcester;Outdoors,Animals,Kids,Science,Weekend,Summer,Winter Break
+Garden Volunteer"Looking for volunteers to assist us ensuring the beds are properly watered and maintained in our off hours."Shrewsbury;Outdoors,After School,Weekend
+Robotics Team Mentor"Tahanto Regional is looking for high school students with robotics experience to run workshops for the middle school robotics team."Boylston;Indoors,Engineering,After School,Tutoring
+Litter Clean-up"Every Saturday from 9 to noon, we pick a location and clean up litter off of main roads."Holden;Outdoors,Weekend
