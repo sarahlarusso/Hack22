@@ -3,10 +3,11 @@ package general;
 import java.io.*;
 import java.util.*;
 
-public class Parser {
+public class OrgParser {
 
     public static HashList<Organization> parseFile(String fileName) throws IOException {
         HashList<Organization> orgs = new HashList<>();
+        // create scanner
         Scanner scanley = new Scanner(new File(fileName));
             while(scanley.hasNextLine()){
                 String line = scanley.nextLine();
@@ -19,7 +20,7 @@ public class Parser {
                 org.setName(name);
                 org.setDescripton(description);
                 org.setTown(town);
-                //tags
+                // tags
                 String[] tags = line.substring(semi+1).split(",");
                 for(String tag : tags){
                     org.add(Category.getCategory(tag));
