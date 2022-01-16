@@ -6,7 +6,7 @@ public class DataBase {
     HashList<User> users;
 
     /**
-     * Creates an empty DataBase
+     * Creates an empty LocalStorage
      */
     public DataBase() {
         this.organizations = new HashList<>();

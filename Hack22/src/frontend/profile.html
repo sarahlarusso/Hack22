@@ -35,9 +35,11 @@
     <div class="container">
       <div class="left-col">
 
+        <p>Welcome, <span id="uname"></span>!</p>
+
         <h1>What Are You Looking For?</h1>
 
-        <div class="H1toH5">
+        <form class="H1toH5" action="/user_preferences/" method="post">
           <label> <input type="checkbox" />
             <span class="seatButton">Cooking</span>
           </label>
@@ -92,7 +94,7 @@
             <input type="checkbox" />
             <span class="seatButton">Weekend</span>
           </label>
-        </div>
+        </form>
         <div class="hero-cta">
           <a href="orgRecs.html" class="primary-cta">Submit</a>
         </div>
@@ -113,6 +115,15 @@
     mobileBtnExit.addEventListener('click', () => {
       nav.classList.remove('menu-btn');
     })
+
+    window.onload = () => {
+        fetch('/username.txt').then(res => {
+            return res.text();
+        }).then(user => {
+            let userDiv = document.getElementById('uname');
+            userDiv.innerHTML = user;
+        });
+    }
   </script>
 
 </body>
