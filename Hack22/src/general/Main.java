@@ -41,7 +41,7 @@ public class Main {
 		}
 		httpServer.createContext("/", ex -> handle(pathToRoot, ex));
 		httpServer.createContext("/profile/", ex -> handleProfile(pathToRoot, ex));
-		httpServer.createContext("/user_preferences/", ex -> handleCategories(pathToRoot, ex));
+		httpServer.createContext("/orgRecs/", ex -> handleCategories(pathToRoot, ex));
 		//int port = Integer.parseInt(args[1]);
 
 		httpServer.setExecutor(null); // creates a default executor
@@ -121,6 +121,20 @@ public class Main {
 
 	public static void handleCategories(String pathToRoot, HttpExchange httpExchange) throws IOException {
 		System.out.println("guakamole");
+
+		InputStream inputStream = httpExchange.getRequestBody();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+		String line = reader.lines().collect(Collectors.joining("\n"));
+		System.out.println(line);
+
+		final String response = "<meta http-equiv=\"Refresh\" content=\"0; url='/orgRecs.html'\" />\n";
+		httpExchange.getResponseHeaders().set("Content-Type", "text/html");
+		httpExchange.sendResponseHeaders(200, response.length());
+		OutputStream outputStream = httpExchange.getResponseBody();
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStream));
+		writer.write(response);
+		writer.flush();
+		writer.close();
 	}
 }
 

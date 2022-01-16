@@ -39,65 +39,66 @@
 
         <h1>What Are You Looking For?</h1>
 
-        <form class="H1toH5" action="/user_preferences/" method="post">
+        <form class="H1toH5" action="/orgRecs/" method="post">
           <label> <input type="checkbox" />
-            <span class="seatButton">Cooking</span>
+            <span class="seatButton" onclick="toggle(0)">Cooking</span>
           </label>
           <label> <input type="checkbox" />
-            <span class="seatButton">Kids</span>
+            <span class="seatButton" onclick="toggle(1)">Kids</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Animals</span>
+            <span class="seatButton" onclick="toggle(2)">Animals</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Outdoors</span>
+            <span class="seatButton" onclick="toggle(3)">Outdoors</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Indoors</span>
+            <span class="seatButton" onclick="toggle(4)">Indoors</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Senior Citizens</span>
+            <span class="seatButton" onclick="toggle(5)">Senior Citizens</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Tutoring</span>
+            <span class="seatButton" onclick="toggle(6)">Tutoring</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Art</span>
+            <span class="seatButton" onclick="toggle(7)">Art</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Science</span>
+            <span class="seatButton" onclick="toggle(8)">Science</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Engineering</span>
+            <span class="seatButton" onclick="toggle(9)">Engineering</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">After School</span>
+            <span class="seatButton" onclick="toggle(10)">After School</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Summer</span>
+            <span class="seatButton" onclick="toggle(11)">Summer</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Winter Break</span>
+            <span class="seatButton" onclick="toggle(12)">Winter Break</span>
           </label>
           <label>
             <input type="checkbox" />
-            <span class="seatButton">Weekend</span>
+            <span class="seatButton" onclick="toggle(13)">Weekend</span>
+          </label>
+          <label>
+            <input type="submit" value="Submit">
+            <span class="primary-cta" onclick="submit()">Submit</span>
           </label>
         </form>
-        <div class="hero-cta">
-          <a href="orgRecs.html" class="primary-cta">Submit</a>
-        </div>
       </div>
 
     </div>
@@ -106,6 +107,8 @@
 
 
   <script>
+    var values = [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
     const mobileBtn = document.getElementById('mobile-cta')
     nav = document.querySelector('nav');
     mobileBtnExit = document.getElementById('mobile-exit')
@@ -123,6 +126,19 @@
             let userDiv = document.getElementById('uname');
             userDiv.innerHTML = user;
         });
+    }
+
+    function toggle(buttonNum) {
+        values[buttonNum] = 1 - values[buttonNum];
+    }
+
+    function submit() {
+        var input = document.createElement("input");
+        input.type = "text";
+        input.className = "profile.css";
+        container.appendChild(input);
+        input.innerHTML = values;
+        alert(values);
     }
   </script>
 
