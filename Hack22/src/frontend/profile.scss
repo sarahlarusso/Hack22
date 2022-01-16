@@ -61,14 +61,16 @@ section{
 
 .hero{
     text-align: center;
+    padding-top: 1em;
 }
 
 .left-col{
-    .subhead{
+    p{
         text-transform: uppercase;
         font-weight: bold;
-        color: gray;
+        color: var(--primary-color);
         letter-spacing: .3em;
+        font-size: 1.3em;
     }
 
     h1{
