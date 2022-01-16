@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - LindaHand</title>
+  <link rel="stylesheet" href="logIn.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container">
+      <!-- a creates hyperlink and the hashtag means it goes nowhere -->
+      <a class="logo" href="index.html">Linda<span>Hand</span></a> <!-- span seperates words in css -->
+
+      <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+      <nav>
+        <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+        <!-- ul is unordered list -->
+        <ul class="primary-nav">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="newOrg.html">Register Your Organization</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="left-col">
+
+        <h1>Existing User</h1>
+
+        <form action="profile.html">
+          <label for="uname">Username:</label>
+          <input type="text" id="uname" name="uname" required><br><br>
+          <label for="pword">Password:</label>
+          <input type="password" id="pword" name="pword" required><br><br>
+          <input type="submit" value="Log In">
+        </form>
+
+        <p>New User?</p> <a class="logo" href="newUser.html">Register Account</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav');
+    mobileBtnExit = document.getElementById('mobile-exit')
+    mobileBtn.addEventListener('click', () => {
+      nav.classList.add('menu-btn');
+    })
+    mobileBtnExit.addEventListener('click', () => {
+      nav.classList.remove('menu-btn');
+    })
+  </script>
+</body>
+
+</html>
