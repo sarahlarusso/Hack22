@@ -7,6 +7,8 @@ import test.MasterTest;
 
 import java.io.*;
 import java.net.InetSocketAddress;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 // Created a website to output recommended community service opportunities
 // to high school students based upon their interests. Organizations can
@@ -38,6 +40,7 @@ public class Main {
 			throw new IllegalStateException("Couldn't find webroot: "+pathToRoot);
 		}
 		httpServer.createContext("/", ex -> handle(pathToRoot, ex));
+		httpServer.createContext("/profile/", ex -> handleProfile(pathToRoot, ex));
 		//int port = Integer.parseInt(args[1]);
 
 		httpServer.setExecutor(null); // creates a default executor
@@ -92,6 +95,22 @@ public class Main {
 			System.err.println("Error retrieving: " + path);
 			t.printStackTrace();
 		}
+	}
+
+	public static void handleProfile(String pathToRoot, HttpExchange httpExchange) throws IOException {
+		InputStream inputStream = httpExchange.getRequestBody();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+		String line = reader.lines().collect(Collectors.joining("\n"));
+		System.out.println(line);
+
+		final String response = "<meta http-equiv=\"Refresh\" content=\"0; url='/profile.html'\" />\n";
+		httpExchange.getResponseHeaders().set("Content-Type", "text/html");
+		httpExchange.sendResponseHeaders(200, response.length());
+		OutputStream outputStream = httpExchange.getResponseBody();
+		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStream));
+		writer.write(response);
+		writer.flush();
+		writer.close();
 	}
 }
 
