@@ -107,7 +107,7 @@ public class MasterTest {
         HashList<Organization> orgs = OrgParser.parseFile("Organizations.txt");
         assertEquals(12, orgs.size());
         HashList<School> schools = SchoolParser.parseFile("Schools.txt");
-        assertEquals(12, schools.size());
+        assertEquals(20, schools.size());
         assertEquals("Roxbury", schools.get(3).getTown());
     }
 }
